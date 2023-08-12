@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Room;
 use App\Http\Requests\StoreRoomRequest;
 use App\Http\Requests\UpdateRoomRequest;
+use App\Http\Resources\RoomResource;
 
 class RoomController extends Controller
 {
@@ -13,7 +14,7 @@ class RoomController extends Controller
      */
     public function index()
     {
-        //
+        return RoomResource::collection(Room::all());
     }
 
     /**
