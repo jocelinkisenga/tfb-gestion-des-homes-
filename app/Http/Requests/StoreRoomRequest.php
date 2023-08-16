@@ -25,7 +25,7 @@ class StoreRoomRequest extends FormRequest
             "code" => "required|string",
             "places" => "required|integer",
             "status" => "nullable",
-            "description" => "nullable|text"
+            "description" => "nullable"
         ];
     }
 }

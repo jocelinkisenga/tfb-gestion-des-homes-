@@ -25,7 +25,14 @@ class RoomController extends Controller
      */
     public function store(StoreRoomRequest $request)
     {
-        Room::create($request);
+        Room::create(
+            [
+                "code" => $request->code,
+                "places" => $request->places,
+                "status" => $request->status,
+                "description" => $request->description
+            ]
+        );
         return response()->json([
             'message' => 'room created successfully'
             ], 201);
@@ -36,8 +43,8 @@ class RoomController extends Controller
      */
     public function show( int $id)
     {
-        
-        return new RoomResource($this->room = Room::findOrFail($id),200);
+
+        return new RoomResource($this->room = Room::findOrFail($id));
     }
 
 
@@ -47,7 +54,7 @@ class RoomController extends Controller
      */
     public function update(UpdateRoomRequest $request, Room $room)
     {
-        
+
         return response()->json([
             'message' => 'room updated successfully'
             ], 201);

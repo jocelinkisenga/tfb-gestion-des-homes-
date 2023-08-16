@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Permission;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,7 +19,10 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Per
+        Permission::create([
+            "user_id" => 1,
+            "role_id" => 1,
+        ]);
     }
 
     /**

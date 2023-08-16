@@ -16,13 +16,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-    Route::get("rooms",[RoomController::class,"index"])->name("rooms.all");
+ Route::middleware(["auth:sanctum"])->group(function(){
+    Route::get("rooms/",[RoomController::class,"index"])->name("rooms.all");
     Route::get("room/{id}",[RoomController::class,"show"])->name("room.show");
+    Route::post("room/",[RoomController::class, "store"])->name("room.store");
+
     Route::post("login",[AuthenticatedController::class,'login'])->name('login');
     Route::post("register",[AuthenticatedController::class,'register'])->name('register');
 
+});
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
+
+
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
