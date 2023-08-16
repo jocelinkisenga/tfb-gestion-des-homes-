@@ -13,7 +13,7 @@ class ReservationController extends Controller
      */
     public function index()
     {
-
+                return Reservationres::collection(Room::all());
     }
 
 
@@ -23,10 +23,18 @@ class ReservationController extends Controller
      */
     public function store(StoreReservationRequest $request)
     {
-        Reservation::create($request);
+        Reservation::create([
+            "room_id" => $request->room_id,
+            "fullName" => $request->fullName,
+            "email" => $request->email,
+            "telephone" => $request->telephone,
+            "promotion" => $request->promotion,
+            "faculte" => $request->faculte,
+            "genre" => $request->genre
+        ]);
         return response()->json([
-            'message' => 'room created successfully'
-            ], 201);
+            'message' => 'reservation created successfully'
+        ], 201);
     }
 
     /**
