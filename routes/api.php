@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\AuthenticatedController;
+use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\RoomController;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +22,12 @@ use Illuminate\Support\Facades\Route;
     Route::get("rooms/",[RoomController::class,"index"])->name("rooms.all");
     Route::get("room/{id}",[RoomController::class,"show"])->name("room.show");
     Route::post("room/",[RoomController::class, "store"])->name("room.store");
+
+    Route::get("reservations/",[ReservationController::class, "index"])->name('reservations.all');
+    Route::get("reservation/{id}",[ReservationController::class, "show"])->name('reservations.show');
+    Route::post("reservation/", [ReservationController::class,'store'])->name("reservation.store");
+    Route::put("reservation/{id}",[ReservationController::class, "update"])->name('reservations.update');
+    Route::delete("reservationDelete/",[ReservationController::class, "destroy"])->name('reservations.destroy');
 
     Route::post("login",[AuthenticatedController::class,'login'])->name('login');
     Route::post("register",[AuthenticatedController::class,'register'])->name('register');
