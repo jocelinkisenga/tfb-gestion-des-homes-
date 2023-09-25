@@ -15,7 +15,7 @@ class RoomController extends \App\Http\Controllers\Controller
 {
     public function __construct()
     {
-
+        $this->middleware("auth:sanctum")->only(["store","update","destroy"]);
     }
 
     public function index(): AnonymousResourceCollection

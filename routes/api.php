@@ -23,8 +23,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 /*===========================
 =           rooms           =
 =============================*/
-Route::post("register",[AuthenticatedController::class,"register"]);
-Route::post("login",[AuthenticatedController::class,"login"]);
+Route::post("register",[AuthenticatedController::class,"register"])->name("register");
+Route::post("login",[AuthenticatedController::class,"login"])->name("login");
+
 Route::apiResource('/rooms', \App\Http\Controllers\API\RoomController::class);
 
 /*=====  End of rooms   ======*/
