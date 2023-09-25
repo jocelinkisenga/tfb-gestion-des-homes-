@@ -15,10 +15,10 @@ class SubscriptionController extends Controller
 {
     public function __construct()
     {
-
+        $this->middleware("auth:sanctum");
     }
 
-    public function index(): AnonymousResourceCollection 
+    public function index(): AnonymousResourceCollection
     {
         $subscriptions = Subscription::useFilters()->dynamicPaginate();
 

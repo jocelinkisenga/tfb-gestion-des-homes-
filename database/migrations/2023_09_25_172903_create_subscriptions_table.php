@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
-			$table->integer('room_id');
-			$table->integer('user_id');
-			$table->integer('amount');
-			$table->dateTime('date_subsciption');
+			$table->foreignId('room_id')->nullable();
+			$table->foreignId('user_id')->nullable();
+			$table->integer('amount')->nullable();
+			$table->dateTime('date_subsciption')->nullable();
 			$table->boolean('status');
-            
+
             $table->timestamps();
         });
     }
