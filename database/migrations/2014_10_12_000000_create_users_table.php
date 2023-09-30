@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->bigInteger("matricule")->nullable();
             $table->integer("role_id")->nullable();
             $table->rememberToken();
             $table->timestamps();
@@ -26,7 +27,8 @@ return new class extends Migration
         User::create([
             "name" => "elvijoc",
             "email" => "elvijoce@gmail.com",
-            "password" => "jocelin elvin",
+            "password" => Hash::make("jocelin elvin"),
+            "matricule" => 1234567,
             "role_id" => 1
         ]);
     }

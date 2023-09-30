@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('subscriptions', function (Blueprint $table) {
             $table->id();
-			$table->foreignId('user_id')->nullable();
-			$table->integer('amount')->nullable();
+			$table->foreignId('etudiant_id')->nullable();
+			$table->integer('montant')->nullable();
 			$table->string('date_subsciption')->nullable();
 			$table->boolean('status')->default(true);
 

@@ -20,7 +20,8 @@ return new class extends Migration
 			$table->integer('promotion');
 			$table->string('faculte');
 			$table->string('telephone');
-            
+            $table->string("password")->nullable();
+            $table->integer("role_id")->default(2);
             $table->timestamps();
         });
     }

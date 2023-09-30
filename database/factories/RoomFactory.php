@@ -11,11 +11,11 @@ class RoomFactory extends Factory
     {
         $logements = Logement::pluck('id')->toArray();
         return [
-            'numberRoom' => $this->faker->randomNumber(),
+            'numeroChambre' => $this->faker->randomNumber(),
 			'id_logement' => $this->faker->randomElement($logements),
 			'places' => $this->faker->randomNumber(),
 			'status' => $this->faker->boolean(),
-			'image_path' => $this->faker->firstName(),
+			'image' => $this->faker->filePath(),
 			'description' => $this->faker->text(),
         ];
     }

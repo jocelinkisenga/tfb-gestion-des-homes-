@@ -21,11 +21,11 @@ class Room extends Model
      * @var array
      */
     protected $fillable = [
-        'numberRoom',
+        'numeroChambre',
 		'id_logement',
 		'places',
 		'status',
-		'image_path',
+		'image',
 		'description',
     ];
 

@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Etudiant extends Model
 {
+    public $table = "etudiants";
     use HasFactory, Filterable;
 
     protected string $default_filters = EtudiantFilters::class;
@@ -25,6 +26,7 @@ class Etudiant extends Model
 		'promotion',
 		'faculte',
 		'telephone',
+        'role_id'
     ];
 
 

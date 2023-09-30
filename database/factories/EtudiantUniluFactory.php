@@ -18,13 +18,14 @@ class EtudiantUniluFactory extends Factory
 
     public function definition(): array
     {
-
+     $facultes =   $this->faker->randomElement(['sciences','droit','medecine','psycho','economie','SPA','polythequenique']);
+    $genre = $this->faker->randomElement(["M","F"]);
         return [
             'nom' => $this->faker->firstName(),
-			'matricule' => $this->faker->randomNumber(),
-			'promotion' => $this->faker->firstName(),
-			'faculte' => $this->faker->firstName(),
-			'genre' => $this->faker->firstName(),
+			'matricule' => $this->faker->randomNumber(5),
+			'promotion' => $this->faker->randomDigitNotZero(),
+			'faculte' => $facultes,
+			'genre' => $genre,
 			'date_subsciption' => $this->faker->dateTime(),
 			'status' => $this->faker->boolean(),
             "password" => Hash::make("unilu la meilleure")

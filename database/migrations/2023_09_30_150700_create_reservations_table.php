@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-			$table->foreignId('idChambre')->constrained('chambres');
-			$table->foreinId('IdEtudiant')->constrained("etudiants");
-			$table->file('lettreMotivation')->nullable();
-			$table->file('preuvePaiement')->nullable();
+			$table->foreignId('idChambre')->constrained('rooms');
+			$table->foreignId('IdEtudiant');
+			$table->string('lettreMotivation')->nullable();
+			$table->string('preuvePaiement')->nullable();
 
             $table->timestamps();
         });

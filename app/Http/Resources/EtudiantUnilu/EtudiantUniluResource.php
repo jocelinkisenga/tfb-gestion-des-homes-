@@ -17,8 +17,6 @@ class EtudiantUniluResource extends JsonResource
 			'genre' => $this->genre,
 			'date_subsciption' => dateTimeFormat($this->date_subsciption),
 			'status' => $this->status,
-            'created_at' => dateTimeFormat($this->created_at),
-            'updated_at' => dateTimeFormat($this->updated_at),
         ];
     }
 }
