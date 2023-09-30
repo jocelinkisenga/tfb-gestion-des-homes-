@@ -2,17 +2,17 @@
 
 namespace App\Models;
 
-use App\Filters\SubscriptionFilters;
+use App\Filters\LogementFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
-
-class Subscription extends Model
+class Logement extends Model
 {
     use HasFactory, Filterable;
 
-    protected string $default_filters = SubscriptionFilters::class;
+    protected string $default_filters = LogementFilters::class;
 
     /**
      * Mass-assignable attributes.
@@ -20,11 +20,11 @@ class Subscription extends Model
      * @var array
      */
     protected $fillable = [
-		'user_id',
-		'amount',
-		'date_subsciption',
-		'status',
+        'nom',
+		'nombreChambre',
     ];
 
-
+public function rooms () : HasMany {
+    return $this->hasMany(Room::class);
+}
 }

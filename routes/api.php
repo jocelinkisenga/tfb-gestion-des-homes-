@@ -37,3 +37,19 @@ Route::apiResource('/rooms', \App\Http\Controllers\API\RoomController::class);
 Route::apiResource('/subscriptions', \App\Http\Controllers\API\SubscriptionController::class);
 
 /*=====  End of subscriptions   ======*/
+
+/*===========================
+=           etudiantUnilus           =
+=============================*/
+
+Route::apiResource('/etudiantUnilus', \App\Http\Controllers\API\EtudiantUniluController::class);
+
+/*=====  End of etudiantUnilus   ======*/
+
+/*===========================
+=           logements           =
+=============================*/
+
+Route::apiResource('/logements', \App\Http\Controllers\API\LogementController::class);
+
+/*=====  End of logements   ======*/

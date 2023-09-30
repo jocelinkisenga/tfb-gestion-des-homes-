@@ -13,14 +13,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms', function (Blueprint $table) {
+        Schema::create('etudiantUnilus', function (Blueprint $table) {
             $table->id();
-			$table->integer('numberRoom');
-			$table->string('id_logement')->nullable();
-			$table->integer('places');
-			$table->boolean('status')->default(true);
-			$table->string('image_path')->nullable();
-			$table->text('description')->nullable();
+			$table->string('nom');
+			$table->bigInteger('matricule');
+			$table->string('promotion');
+			$table->string('faculte');
+			$table->string('genre');
+			$table->dateTime('date_subsciption');
+			$table->boolean('status');
+            $table->string("password");
 
             $table->timestamps();
         });
@@ -33,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('rooms');
+        Schema::dropIfExists('etudiantUnilus');
     }
 };

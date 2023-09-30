@@ -10,13 +10,10 @@ class SubscriptionResource extends JsonResource
     {
         return [
             'id' => $this->id,
-            'room_id' => $this->room_id,
 			'user_id' => $this->user_id,
 			'amount' => $this->amount,
 			'date_subsciption' => dateTimeFormat($this->date_subsciption),
 			'status' => $this->status,
-            'created_at' => dateTimeFormat($this->created_at),
-            'updated_at' => dateTimeFormat($this->updated_at),
         ];
     }
 }

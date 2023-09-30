@@ -2,17 +2,17 @@
 
 namespace App\Models;
 
-use App\Filters\SubscriptionFilters;
+use App\Filters\EtudiantUniluFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 
-class Subscription extends Model
+class EtudiantUnilu extends Model
 {
     use HasFactory, Filterable;
-
-    protected string $default_filters = SubscriptionFilters::class;
+    public $table = "etudiantUnilus";
+    protected string $default_filters = EtudiantUniluFilters::class;
 
     /**
      * Mass-assignable attributes.
@@ -20,10 +20,14 @@ class Subscription extends Model
      * @var array
      */
     protected $fillable = [
-		'user_id',
-		'amount',
+        'nom',
+		'matricule',
+		'promotion',
+		'faculte',
+		'genre',
 		'date_subsciption',
 		'status',
+        "password"
     ];
 
 
