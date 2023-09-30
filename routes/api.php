@@ -53,3 +53,27 @@ Route::apiResource('/etudiantUnilus', \App\Http\Controllers\API\EtudiantUniluCon
 Route::apiResource('/logements', \App\Http\Controllers\API\LogementController::class);
 
 /*=====  End of logements   ======*/
+
+/*===========================
+=           rservations           =
+=============================*/
+
+
+
+/*=====  End of rservations   ======*/
+
+/*===========================
+=           reservations           =
+=============================*/
+
+Route::apiResource('/reservations', \App\Http\Controllers\API\ReservationController::class);
+
+/*=====  End of reservations   ======*/
+
+/*===========================
+=           etudiants           =
+=============================*/
+
+Route::apiResource('/etudiants', \App\Http\Controllers\API\EtudiantController::class);
+
+/*=====  End of etudiants   ======*/

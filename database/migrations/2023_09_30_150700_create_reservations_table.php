@@ -13,17 +13,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('etudiantUnilus', function (Blueprint $table) {
+        Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-			$table->string('nom');
-			$table->bigInteger('matricule');
-			$table->integer('promotion');
-			$table->string('faculte');
-			$table->string('genre');
-            $table->string("telephone")->nullable();
-			$table->dateTime('date_subsciption');
-			$table->boolean('status');
-            $table->string("password");
+			$table->foreignId('idChambre')->constrained('chambres');
+			$table->foreinId('IdEtudiant')->constrained("etudiants");
+			$table->file('lettreMotivation')->nullable();
+			$table->file('preuvePaiement')->nullable();
 
             $table->timestamps();
         });
@@ -36,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('etudiantUnilus');
+        Schema::dropIfExists('reservations');
     }
 };
