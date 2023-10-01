@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests\Room;
 
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class CreateRoomRequest extends FormRequest
 {
@@ -30,5 +32,13 @@ class CreateRoomRequest extends FormRequest
 			'image_path' => ['required', 'image'],
 			'description' => ['required', 'string'],
         ];
+    }
+
+    public function failedValidation(Validator $validator) {
+        throw new HttpResponseException(response()->json([
+              'success' => false,
+              'message' => 'validation errors',
+              $validator->errors()
+        ]));
     }
 }

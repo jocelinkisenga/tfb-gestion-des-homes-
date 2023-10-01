@@ -2,7 +2,9 @@
 
 namespace App\Http\Requests\Etudiant;
 
+use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class CreateEtudiantRequest extends FormRequest
 {
@@ -15,5 +17,13 @@ class CreateEtudiantRequest extends FormRequest
 			'faculte' => ['required', 'string'],
 			'telephone' => ['required', 'string'],
         ];
+    }
+
+    public function failedValidation(Validator $validator) {
+        throw new HttpResponseException(response()->json([
+              'success' => false,
+              'message' => 'validation errors',
+              $validator->errors()
+        ]));
     }
 }
