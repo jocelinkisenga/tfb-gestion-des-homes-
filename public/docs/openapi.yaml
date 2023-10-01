@@ -1,0 +1,2508 @@
+openapi: 3.0.3
+info:
+  title: Laravel
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  errors:
+                    -
+                      status: 401
+                      title: Unauthenticated!
+                      detail: Unauthenticated.
+                properties:
+                  errors:
+                    type: array
+                    example:
+                      -
+                        status: 401
+                        title: Unauthenticated!
+                        detail: Unauthenticated.
+                    items:
+                      type: object
+                      properties:
+                        status:
+                          type: integer
+                          example: 401
+                        title:
+                          type: string
+                          example: Unauthenticated!
+                        detail:
+                          type: string
+                          example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+  /api/login:
+    post:
+      summary: ''
+      operationId: postApiLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/rooms:
+    get:
+      summary: ''
+      operationId: getApiRooms
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      numberRoom: null
+                      HomeName: null
+                      places: 863244
+                      status: 1
+                      image_path: null
+                      description: 'Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.'
+                    -
+                      id: 2
+                      numberRoom: null
+                      HomeName: null
+                      places: 86836
+                      status: 1
+                      image_path: null
+                      description: 'Vel qui ad hic est consequatur. Quam voluptas quae assumenda eligendi libero eligendi. Sit voluptates quia qui nostrum quas. Accusantium repellendus dignissimos velit sunt fugiat autem possimus.'
+                    -
+                      id: 3
+                      numberRoom: null
+                      HomeName: null
+                      places: 5871534
+                      status: 0
+                      image_path: null
+                      description: 'Ipsa sed odit repellat minima animi sapiente. Quia nostrum accusantium est. Ex iusto debitis quo adipisci quos.'
+                    -
+                      id: 4
+                      numberRoom: null
+                      HomeName: null
+                      places: 49390
+                      status: 0
+                      image_path: null
+                      description: 'Vel qui fugiat tenetur. Eveniet velit voluptatem adipisci quam cumque. Quisquam fugit pariatur vel totam dolores. Minus at natus id et eum.'
+                    -
+                      id: 5
+                      numberRoom: null
+                      HomeName: null
+                      places: 48864
+                      status: 1
+                      image_path: null
+                      description: 'Rem perferendis at et iusto. Dolor nostrum et provident voluptas eveniet. Minus accusamus minus consequatur aperiam tenetur. Aspernatur est esse vitae rerum.'
+                    -
+                      id: 6
+                      numberRoom: null
+                      HomeName: null
+                      places: 72318868
+                      status: 1
+                      image_path: null
+                      description: 'Ut magni fuga et temporibus temporibus et. Aut et aut suscipit hic fugit est autem. Et eveniet autem aut omnis eveniet.'
+                    -
+                      id: 7
+                      numberRoom: null
+                      HomeName: null
+                      places: 617
+                      status: 0
+                      image_path: null
+                      description: 'Porro dolor tempore magni provident est est. Ea natus odit perferendis velit. Et rerum aspernatur id incidunt consequatur.'
+                    -
+                      id: 8
+                      numberRoom: null
+                      HomeName: null
+                      places: 1
+                      status: 1
+                      image_path: null
+                      description: 'Nihil commodi tenetur quae in quod non. Pariatur quis hic tempore sed tempore temporibus repellat.'
+                    -
+                      id: 9
+                      numberRoom: null
+                      HomeName: null
+                      places: 19
+                      status: 1
+                      image_path: null
+                      description: 'Id impedit totam ex ducimus suscipit esse quidem. Nobis rem voluptates eos illo unde recusandae. Ut delectus voluptates ut enim voluptatem.'
+                    -
+                      id: 10
+                      numberRoom: null
+                      HomeName: null
+                      places: 7178916
+                      status: 1
+                      image_path: null
+                      description: 'Enim sunt aut incidunt ipsum. Accusantium dolor corrupti enim voluptates cumque ut veritatis ipsam. Suscipit quae perspiciatis voluptas est quaerat. Non repudiandae non ratione libero maiores id.'
+                    -
+                      id: 11
+                      numberRoom: null
+                      HomeName: null
+                      places: 72806427
+                      status: 0
+                      image_path: null
+                      description: 'Eveniet nisi qui et ipsam facere recusandae. Cupiditate modi quia esse est unde expedita. Delectus itaque illo ipsa ea.'
+                    -
+                      id: 12
+                      numberRoom: null
+                      HomeName: null
+                      places: 0
+                      status: 1
+                      image_path: null
+                      description: 'Eum hic dignissimos aut veniam sed praesentium quis et. Aspernatur debitis cumque quasi ullam expedita et consectetur numquam. Ducimus modi est laudantium.'
+                    -
+                      id: 13
+                      numberRoom: null
+                      HomeName: null
+                      places: 79136973
+                      status: 0
+                      image_path: null
+                      description: 'Eligendi sunt possimus et et aut. Cupiditate officiis sit voluptatem qui. Veniam temporibus non odio consectetur. Laudantium sed sit assumenda quas voluptatem voluptatem vero maiores.'
+                    -
+                      id: 14
+                      numberRoom: null
+                      HomeName: null
+                      places: 50810645
+                      status: 1
+                      image_path: null
+                      description: 'Ad odio molestias nisi nulla eius. Dicta omnis quasi amet consequatur voluptatibus. Delectus occaecati eos in exercitationem commodi accusantium aut. Tempore impedit nesciunt consequatur sunt quod.'
+                    -
+                      id: 15
+                      numberRoom: null
+                      HomeName: null
+                      places: -1
+                      status: 1
+                      image_path: null
+                      description: 'Maxime aut quam libero. Autem quisquam praesentium sint magnam nam. Rerum laborum accusamus earum aliquid porro quo.'
+                    -
+                      id: 16
+                      numberRoom: null
+                      HomeName: null
+                      places: 5320
+                      status: 1
+                      image_path: null
+                      description: 'Enim ipsam accusantium odit et. Dolorum quia aut et pariatur. Sint qui iste in qui. Ut culpa consequatur nemo ex et aut. Harum consectetur quam omnis numquam.'
+                    -
+                      id: 17
+                      numberRoom: null
+                      HomeName: null
+                      places: 7761
+                      status: 0
+                      image_path: null
+                      description: 'Consequatur consequatur eos voluptatem quod voluptates et autem. Libero natus non sit enim. Incidunt qui quo dolore at voluptatem et magni.'
+                    -
+                      id: 18
+                      numberRoom: null
+                      HomeName: null
+                      places: 629
+                      status: 0
+                      image_path: null
+                      description: 'Earum pariatur dicta error ea at optio. Sunt debitis quia aut nemo voluptas. Voluptate accusamus sit est sint libero qui officia.'
+                    -
+                      id: 19
+                      numberRoom: null
+                      HomeName: null
+                      places: 706
+                      status: 0
+                      image_path: null
+                      description: 'Illo vel praesentium error quia labore. Culpa cumque exercitationem reprehenderit eos vel. Sunt magni ex assumenda id nisi distinctio.'
+                    -
+                      id: 20
+                      numberRoom: null
+                      HomeName: null
+                      places: 28156821
+                      status: 1
+                      image_path: null
+                      description: 'Sit adipisci culpa et aut. Maiores quis magnam natus doloribus voluptate assumenda. Omnis quo qui aut.'
+                  links:
+                    first: 'http://localhost/api/rooms?page=1'
+                    last: 'http://localhost/api/rooms?page=5'
+                    prev: null
+                    next: 'http://localhost/api/rooms?page=2'
+                  meta:
+                    current_page: 1
+                    from: 1
+                    last_page: 5
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/rooms?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://localhost/api/rooms?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://localhost/api/rooms?page=3'
+                        label: '3'
+                        active: false
+                      -
+                        url: 'http://localhost/api/rooms?page=4'
+                        label: '4'
+                        active: false
+                      -
+                        url: 'http://localhost/api/rooms?page=5'
+                        label: '5'
+                        active: false
+                      -
+                        url: 'http://localhost/api/rooms?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    path: 'http://localhost/api/rooms'
+                    per_page: 20
+                    to: 20
+                    total: 100
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        numberRoom: null
+                        HomeName: null
+                        places: 863244
+                        status: 1
+                        image_path: null
+                        description: 'Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.'
+                      -
+                        id: 2
+                        numberRoom: null
+                        HomeName: null
+                        places: 86836
+                        status: 1
+                        image_path: null
+                        description: 'Vel qui ad hic est consequatur. Quam voluptas quae assumenda eligendi libero eligendi. Sit voluptates quia qui nostrum quas. Accusantium repellendus dignissimos velit sunt fugiat autem possimus.'
+                      -
+                        id: 3
+                        numberRoom: null
+                        HomeName: null
+                        places: 5871534
+                        status: 0
+                        image_path: null
+                        description: 'Ipsa sed odit repellat minima animi sapiente. Quia nostrum accusantium est. Ex iusto debitis quo adipisci quos.'
+                      -
+                        id: 4
+                        numberRoom: null
+                        HomeName: null
+                        places: 49390
+                        status: 0
+                        image_path: null
+                        description: 'Vel qui fugiat tenetur. Eveniet velit voluptatem adipisci quam cumque. Quisquam fugit pariatur vel totam dolores. Minus at natus id et eum.'
+                      -
+                        id: 5
+                        numberRoom: null
+                        HomeName: null
+                        places: 48864
+                        status: 1
+                        image_path: null
+                        description: 'Rem perferendis at et iusto. Dolor nostrum et provident voluptas eveniet. Minus accusamus minus consequatur aperiam tenetur. Aspernatur est esse vitae rerum.'
+                      -
+                        id: 6
+                        numberRoom: null
+                        HomeName: null
+                        places: 72318868
+                        status: 1
+                        image_path: null
+                        description: 'Ut magni fuga et temporibus temporibus et. Aut et aut suscipit hic fugit est autem. Et eveniet autem aut omnis eveniet.'
+                      -
+                        id: 7
+                        numberRoom: null
+                        HomeName: null
+                        places: 617
+                        status: 0
+                        image_path: null
+                        description: 'Porro dolor tempore magni provident est est. Ea natus odit perferendis velit. Et rerum aspernatur id incidunt consequatur.'
+                      -
+                        id: 8
+                        numberRoom: null
+                        HomeName: null
+                        places: 1
+                        status: 1
+                        image_path: null
+                        description: 'Nihil commodi tenetur quae in quod non. Pariatur quis hic tempore sed tempore temporibus repellat.'
+                      -
+                        id: 9
+                        numberRoom: null
+                        HomeName: null
+                        places: 19
+                        status: 1
+                        image_path: null
+                        description: 'Id impedit totam ex ducimus suscipit esse quidem. Nobis rem voluptates eos illo unde recusandae. Ut delectus voluptates ut enim voluptatem.'
+                      -
+                        id: 10
+                        numberRoom: null
+                        HomeName: null
+                        places: 7178916
+                        status: 1
+                        image_path: null
+                        description: 'Enim sunt aut incidunt ipsum. Accusantium dolor corrupti enim voluptates cumque ut veritatis ipsam. Suscipit quae perspiciatis voluptas est quaerat. Non repudiandae non ratione libero maiores id.'
+                      -
+                        id: 11
+                        numberRoom: null
+                        HomeName: null
+                        places: 72806427
+                        status: 0
+                        image_path: null
+                        description: 'Eveniet nisi qui et ipsam facere recusandae. Cupiditate modi quia esse est unde expedita. Delectus itaque illo ipsa ea.'
+                      -
+                        id: 12
+                        numberRoom: null
+                        HomeName: null
+                        places: 0
+                        status: 1
+                        image_path: null
+                        description: 'Eum hic dignissimos aut veniam sed praesentium quis et. Aspernatur debitis cumque quasi ullam expedita et consectetur numquam. Ducimus modi est laudantium.'
+                      -
+                        id: 13
+                        numberRoom: null
+                        HomeName: null
+                        places: 79136973
+                        status: 0
+                        image_path: null
+                        description: 'Eligendi sunt possimus et et aut. Cupiditate officiis sit voluptatem qui. Veniam temporibus non odio consectetur. Laudantium sed sit assumenda quas voluptatem voluptatem vero maiores.'
+                      -
+                        id: 14
+                        numberRoom: null
+                        HomeName: null
+                        places: 50810645
+                        status: 1
+                        image_path: null
+                        description: 'Ad odio molestias nisi nulla eius. Dicta omnis quasi amet consequatur voluptatibus. Delectus occaecati eos in exercitationem commodi accusantium aut. Tempore impedit nesciunt consequatur sunt quod.'
+                      -
+                        id: 15
+                        numberRoom: null
+                        HomeName: null
+                        places: -1
+                        status: 1
+                        image_path: null
+                        description: 'Maxime aut quam libero. Autem quisquam praesentium sint magnam nam. Rerum laborum accusamus earum aliquid porro quo.'
+                      -
+                        id: 16
+                        numberRoom: null
+                        HomeName: null
+                        places: 5320
+                        status: 1
+                        image_path: null
+                        description: 'Enim ipsam accusantium odit et. Dolorum quia aut et pariatur. Sint qui iste in qui. Ut culpa consequatur nemo ex et aut. Harum consectetur quam omnis numquam.'
+                      -
+                        id: 17
+                        numberRoom: null
+                        HomeName: null
+                        places: 7761
+                        status: 0
+                        image_path: null
+                        description: 'Consequatur consequatur eos voluptatem quod voluptates et autem. Libero natus non sit enim. Incidunt qui quo dolore at voluptatem et magni.'
+                      -
+                        id: 18
+                        numberRoom: null
+                        HomeName: null
+                        places: 629
+                        status: 0
+                        image_path: null
+                        description: 'Earum pariatur dicta error ea at optio. Sunt debitis quia aut nemo voluptas. Voluptate accusamus sit est sint libero qui officia.'
+                      -
+                        id: 19
+                        numberRoom: null
+                        HomeName: null
+                        places: 706
+                        status: 0
+                        image_path: null
+                        description: 'Illo vel praesentium error quia labore. Culpa cumque exercitationem reprehenderit eos vel. Sunt magni ex assumenda id nisi distinctio.'
+                      -
+                        id: 20
+                        numberRoom: null
+                        HomeName: null
+                        places: 28156821
+                        status: 1
+                        image_path: null
+                        description: 'Sit adipisci culpa et aut. Maiores quis magnam natus doloribus voluptate assumenda. Omnis quo qui aut.'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        numberRoom:
+                          type: string
+                          example: null
+                        HomeName:
+                          type: string
+                          example: null
+                        places:
+                          type: integer
+                          example: 863244
+                        status:
+                          type: integer
+                          example: 1
+                        image_path:
+                          type: string
+                          example: null
+                        description:
+                          type: string
+                          example: 'Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.'
+                  links:
+                    type: object
+                    properties:
+                      first:
+                        type: string
+                        example: 'http://localhost/api/rooms?page=1'
+                      last:
+                        type: string
+                        example: 'http://localhost/api/rooms?page=5'
+                      prev:
+                        type: string
+                        example: null
+                      next:
+                        type: string
+                        example: 'http://localhost/api/rooms?page=2'
+                  meta:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 5
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/rooms?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://localhost/api/rooms?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://localhost/api/rooms?page=3'
+                            label: '3'
+                            active: false
+                          -
+                            url: 'http://localhost/api/rooms?page=4'
+                            label: '4'
+                            active: false
+                          -
+                            url: 'http://localhost/api/rooms?page=5'
+                            label: '5'
+                            active: false
+                          -
+                            url: 'http://localhost/api/rooms?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      path:
+                        type: string
+                        example: 'http://localhost/api/rooms'
+                      per_page:
+                        type: integer
+                        example: 20
+                      to:
+                        type: integer
+                        example: 20
+                      total:
+                        type: integer
+                        example: 100
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiRooms
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/api/rooms/{id}':
+    get:
+      summary: ''
+      operationId: getApiRoomsId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'here is the room'
+                  data:
+                    id: 1
+                    numberRoom: null
+                    HomeName: null
+                    places: 863244
+                    status: 1
+                    image_path: null
+                    description: 'Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.'
+                properties:
+                  message:
+                    type: string
+                    example: 'here is the room'
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      numberRoom:
+                        type: string
+                        example: null
+                      HomeName:
+                        type: string
+                        example: null
+                      places:
+                        type: integer
+                        example: 863244
+                      status:
+                        type: integer
+                        example: 1
+                      image_path:
+                        type: string
+                        example: null
+                      description:
+                        type: string
+                        example: 'Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.'
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiRoomsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                numberRoom:
+                  type: integer
+                  description: ''
+                  example: 20
+                HomeName:
+                  type: string
+                  description: ''
+                  example: voluptatem
+                places:
+                  type: integer
+                  description: ''
+                  example: 6
+                status:
+                  type: boolean
+                  description: ''
+                  example: false
+                image_path:
+                  type: string
+                  format: binary
+                  description: 'Must be an image.'
+                description:
+                  type: string
+                  description: ''
+                  example: 'Voluptates architecto est ratione et.'
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiRoomsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the room.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/subscriptions:
+    get:
+      summary: ''
+      operationId: getApiSubscriptions
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  errors:
+                    -
+                      status: 401
+                      title: Unauthenticated!
+                      detail: Unauthenticated.
+                properties:
+                  errors:
+                    type: array
+                    example:
+                      -
+                        status: 401
+                        title: Unauthenticated!
+                        detail: Unauthenticated.
+                    items:
+                      type: object
+                      properties:
+                        status:
+                          type: integer
+                          example: 401
+                        title:
+                          type: string
+                          example: Unauthenticated!
+                        detail:
+                          type: string
+                          example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiSubscriptions
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: integer
+                  description: ''
+                  example: 7
+                amount:
+                  type: integer
+                  description: ''
+                  example: 2
+                date_subsciption:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2023-10-01T15:37:29'
+              required:
+                - user_id
+                - amount
+                - date_subsciption
+      security: []
+  '/api/subscriptions/{id}':
+    get:
+      summary: ''
+      operationId: getApiSubscriptionsId
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  errors:
+                    -
+                      status: 401
+                      title: Unauthenticated!
+                      detail: Unauthenticated.
+                properties:
+                  errors:
+                    type: array
+                    example:
+                      -
+                        status: 401
+                        title: Unauthenticated!
+                        detail: Unauthenticated.
+                    items:
+                      type: object
+                      properties:
+                        status:
+                          type: integer
+                          example: 401
+                        title:
+                          type: string
+                          example: Unauthenticated!
+                        detail:
+                          type: string
+                          example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiSubscriptionsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                room_id:
+                  type: integer
+                  description: ''
+                  example: 20
+                user_id:
+                  type: integer
+                  description: ''
+                  example: 17
+                amount:
+                  type: integer
+                  description: ''
+                  example: 17
+                date_subsciption:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2023-10-01T15:37:29'
+                status:
+                  type: boolean
+                  description: ''
+                  example: true
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiSubscriptionsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the subscription.'
+        example: 12
+        required: true
+        schema:
+          type: integer
+  /api/etudiantUnilus:
+    get:
+      summary: ''
+      operationId: getApiEtudiantUnilus
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      nom: Cooper
+                      matricule: 57551
+                      promotion: 6
+                      faculte: sciences
+                      genre: M
+                      date_subsciption: '2020-08-25 06:16:11'
+                      status: 1
+                    -
+                      id: 2
+                      nom: Kaden
+                      matricule: 3705
+                      promotion: 5
+                      faculte: psycho
+                      genre: M
+                      date_subsciption: '2019-07-15 06:51:06'
+                      status: 1
+                    -
+                      id: 3
+                      nom: Cleo
+                      matricule: 77284
+                      promotion: 6
+                      faculte: polythequenique
+                      genre: F
+                      date_subsciption: '1976-08-23 17:48:20'
+                      status: 0
+                    -
+                      id: 4
+                      nom: Aileen
+                      matricule: 13704
+                      promotion: 4
+                      faculte: sciences
+                      genre: M
+                      date_subsciption: '2015-03-17 17:05:58'
+                      status: 0
+                    -
+                      id: 5
+                      nom: Monte
+                      matricule: 33801
+                      promotion: 1
+                      faculte: psycho
+                      genre: M
+                      date_subsciption: '1993-05-25 18:55:39'
+                      status: 1
+                    -
+                      id: 6
+                      nom: Enrique
+                      matricule: 61765
+                      promotion: 3
+                      faculte: sciences
+                      genre: M
+                      date_subsciption: '1999-05-21 03:37:53'
+                      status: 0
+                    -
+                      id: 7
+                      nom: Earlene
+                      matricule: 54096
+                      promotion: 7
+                      faculte: economie
+                      genre: F
+                      date_subsciption: '1997-07-28 03:40:29'
+                      status: 1
+                    -
+                      id: 8
+                      nom: Milton
+                      matricule: 78896
+                      promotion: 7
+                      faculte: economie
+                      genre: F
+                      date_subsciption: '1979-10-01 02:04:46'
+                      status: 0
+                    -
+                      id: 9
+                      nom: Earnestine
+                      matricule: 15205
+                      promotion: 3
+                      faculte: SPA
+                      genre: M
+                      date_subsciption: '2007-10-03 22:55:24'
+                      status: 0
+                    -
+                      id: 10
+                      nom: Daniela
+                      matricule: 43548
+                      promotion: 6
+                      faculte: economie
+                      genre: M
+                      date_subsciption: '1971-08-23 18:16:03'
+                      status: 0
+                    -
+                      id: 11
+                      nom: Daniela
+                      matricule: 66395
+                      promotion: 8
+                      faculte: droit
+                      genre: F
+                      date_subsciption: '1979-03-19 23:58:44'
+                      status: 0
+                    -
+                      id: 12
+                      nom: August
+                      matricule: 20142
+                      promotion: 7
+                      faculte: SPA
+                      genre: F
+                      date_subsciption: '2003-04-14 22:37:59'
+                      status: 0
+                    -
+                      id: 13
+                      nom: Viola
+                      matricule: 6778
+                      promotion: 8
+                      faculte: droit
+                      genre: F
+                      date_subsciption: '1971-03-06 05:03:55'
+                      status: 0
+                    -
+                      id: 14
+                      nom: Johann
+                      matricule: 37449
+                      promotion: 4
+                      faculte: medecine
+                      genre: F
+                      date_subsciption: '2001-10-01 14:20:36'
+                      status: 0
+                    -
+                      id: 15
+                      nom: Estefania
+                      matricule: 24567
+                      promotion: 8
+                      faculte: economie
+                      genre: M
+                      date_subsciption: '2000-03-14 16:27:30'
+                      status: 0
+                    -
+                      id: 16
+                      nom: Scotty
+                      matricule: 65475
+                      promotion: 8
+                      faculte: SPA
+                      genre: M
+                      date_subsciption: '1983-03-10 12:48:04'
+                      status: 0
+                    -
+                      id: 17
+                      nom: Mitchel
+                      matricule: 10503
+                      promotion: 7
+                      faculte: polythequenique
+                      genre: M
+                      date_subsciption: '1993-10-19 23:15:46'
+                      status: 1
+                    -
+                      id: 18
+                      nom: Constance
+                      matricule: 79210
+                      promotion: 6
+                      faculte: economie
+                      genre: F
+                      date_subsciption: '1971-03-12 11:51:30'
+                      status: 0
+                    -
+                      id: 19
+                      nom: Brigitte
+                      matricule: 61177
+                      promotion: 4
+                      faculte: droit
+                      genre: M
+                      date_subsciption: '1986-12-06 16:17:42'
+                      status: 1
+                    -
+                      id: 20
+                      nom: Charles
+                      matricule: 18154
+                      promotion: 2
+                      faculte: psycho
+                      genre: M
+                      date_subsciption: '1972-11-05 05:13:38'
+                      status: 1
+                  links:
+                    first: 'http://localhost/api/etudiantUnilus?page=1'
+                    last: 'http://localhost/api/etudiantUnilus?page=25'
+                    prev: null
+                    next: 'http://localhost/api/etudiantUnilus?page=2'
+                  meta:
+                    current_page: 1
+                    from: 1
+                    last_page: 25
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=3'
+                        label: '3'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=4'
+                        label: '4'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=5'
+                        label: '5'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=6'
+                        label: '6'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=7'
+                        label: '7'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=8'
+                        label: '8'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=9'
+                        label: '9'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=10'
+                        label: '10'
+                        active: false
+                      -
+                        url: null
+                        label: ...
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=24'
+                        label: '24'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=25'
+                        label: '25'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiantUnilus?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    path: 'http://localhost/api/etudiantUnilus'
+                    per_page: 20
+                    to: 20
+                    total: 500
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        nom: Cooper
+                        matricule: 57551
+                        promotion: 6
+                        faculte: sciences
+                        genre: M
+                        date_subsciption: '2020-08-25 06:16:11'
+                        status: 1
+                      -
+                        id: 2
+                        nom: Kaden
+                        matricule: 3705
+                        promotion: 5
+                        faculte: psycho
+                        genre: M
+                        date_subsciption: '2019-07-15 06:51:06'
+                        status: 1
+                      -
+                        id: 3
+                        nom: Cleo
+                        matricule: 77284
+                        promotion: 6
+                        faculte: polythequenique
+                        genre: F
+                        date_subsciption: '1976-08-23 17:48:20'
+                        status: 0
+                      -
+                        id: 4
+                        nom: Aileen
+                        matricule: 13704
+                        promotion: 4
+                        faculte: sciences
+                        genre: M
+                        date_subsciption: '2015-03-17 17:05:58'
+                        status: 0
+                      -
+                        id: 5
+                        nom: Monte
+                        matricule: 33801
+                        promotion: 1
+                        faculte: psycho
+                        genre: M
+                        date_subsciption: '1993-05-25 18:55:39'
+                        status: 1
+                      -
+                        id: 6
+                        nom: Enrique
+                        matricule: 61765
+                        promotion: 3
+                        faculte: sciences
+                        genre: M
+                        date_subsciption: '1999-05-21 03:37:53'
+                        status: 0
+                      -
+                        id: 7
+                        nom: Earlene
+                        matricule: 54096
+                        promotion: 7
+                        faculte: economie
+                        genre: F
+                        date_subsciption: '1997-07-28 03:40:29'
+                        status: 1
+                      -
+                        id: 8
+                        nom: Milton
+                        matricule: 78896
+                        promotion: 7
+                        faculte: economie
+                        genre: F
+                        date_subsciption: '1979-10-01 02:04:46'
+                        status: 0
+                      -
+                        id: 9
+                        nom: Earnestine
+                        matricule: 15205
+                        promotion: 3
+                        faculte: SPA
+                        genre: M
+                        date_subsciption: '2007-10-03 22:55:24'
+                        status: 0
+                      -
+                        id: 10
+                        nom: Daniela
+                        matricule: 43548
+                        promotion: 6
+                        faculte: economie
+                        genre: M
+                        date_subsciption: '1971-08-23 18:16:03'
+                        status: 0
+                      -
+                        id: 11
+                        nom: Daniela
+                        matricule: 66395
+                        promotion: 8
+                        faculte: droit
+                        genre: F
+                        date_subsciption: '1979-03-19 23:58:44'
+                        status: 0
+                      -
+                        id: 12
+                        nom: August
+                        matricule: 20142
+                        promotion: 7
+                        faculte: SPA
+                        genre: F
+                        date_subsciption: '2003-04-14 22:37:59'
+                        status: 0
+                      -
+                        id: 13
+                        nom: Viola
+                        matricule: 6778
+                        promotion: 8
+                        faculte: droit
+                        genre: F
+                        date_subsciption: '1971-03-06 05:03:55'
+                        status: 0
+                      -
+                        id: 14
+                        nom: Johann
+                        matricule: 37449
+                        promotion: 4
+                        faculte: medecine
+                        genre: F
+                        date_subsciption: '2001-10-01 14:20:36'
+                        status: 0
+                      -
+                        id: 15
+                        nom: Estefania
+                        matricule: 24567
+                        promotion: 8
+                        faculte: economie
+                        genre: M
+                        date_subsciption: '2000-03-14 16:27:30'
+                        status: 0
+                      -
+                        id: 16
+                        nom: Scotty
+                        matricule: 65475
+                        promotion: 8
+                        faculte: SPA
+                        genre: M
+                        date_subsciption: '1983-03-10 12:48:04'
+                        status: 0
+                      -
+                        id: 17
+                        nom: Mitchel
+                        matricule: 10503
+                        promotion: 7
+                        faculte: polythequenique
+                        genre: M
+                        date_subsciption: '1993-10-19 23:15:46'
+                        status: 1
+                      -
+                        id: 18
+                        nom: Constance
+                        matricule: 79210
+                        promotion: 6
+                        faculte: economie
+                        genre: F
+                        date_subsciption: '1971-03-12 11:51:30'
+                        status: 0
+                      -
+                        id: 19
+                        nom: Brigitte
+                        matricule: 61177
+                        promotion: 4
+                        faculte: droit
+                        genre: M
+                        date_subsciption: '1986-12-06 16:17:42'
+                        status: 1
+                      -
+                        id: 20
+                        nom: Charles
+                        matricule: 18154
+                        promotion: 2
+                        faculte: psycho
+                        genre: M
+                        date_subsciption: '1972-11-05 05:13:38'
+                        status: 1
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        nom:
+                          type: string
+                          example: Cooper
+                        matricule:
+                          type: integer
+                          example: 57551
+                        promotion:
+                          type: integer
+                          example: 6
+                        faculte:
+                          type: string
+                          example: sciences
+                        genre:
+                          type: string
+                          example: M
+                        date_subsciption:
+                          type: string
+                          example: '2020-08-25 06:16:11'
+                        status:
+                          type: integer
+                          example: 1
+                  links:
+                    type: object
+                    properties:
+                      first:
+                        type: string
+                        example: 'http://localhost/api/etudiantUnilus?page=1'
+                      last:
+                        type: string
+                        example: 'http://localhost/api/etudiantUnilus?page=25'
+                      prev:
+                        type: string
+                        example: null
+                      next:
+                        type: string
+                        example: 'http://localhost/api/etudiantUnilus?page=2'
+                  meta:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 25
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=3'
+                            label: '3'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=4'
+                            label: '4'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=5'
+                            label: '5'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=6'
+                            label: '6'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=7'
+                            label: '7'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=8'
+                            label: '8'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=9'
+                            label: '9'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=10'
+                            label: '10'
+                            active: false
+                          -
+                            url: null
+                            label: ...
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=24'
+                            label: '24'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=25'
+                            label: '25'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiantUnilus?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      path:
+                        type: string
+                        example: 'http://localhost/api/etudiantUnilus'
+                      per_page:
+                        type: integer
+                        example: 20
+                      to:
+                        type: integer
+                        example: 20
+                      total:
+                        type: integer
+                        example: 500
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiEtudiantUnilus
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nom:
+                  type: string
+                  description: ''
+                  example: et
+                matricule:
+                  type: string
+                  description: ''
+                  example: aut
+                promotion:
+                  type: string
+                  description: ''
+                  example: est
+                faculte:
+                  type: string
+                  description: ''
+                  example: fuga
+                genre:
+                  type: string
+                  description: ''
+                  example: consequatur
+                date_subsciption:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2023-10-01T15:37:29'
+                status:
+                  type: boolean
+                  description: ''
+                  example: true
+              required:
+                - nom
+                - matricule
+                - promotion
+                - faculte
+                - genre
+                - date_subsciption
+                - status
+      security: []
+  '/api/etudiantUnilus/{id}':
+    get:
+      summary: ''
+      operationId: getApiEtudiantUnilusId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: null
+                  data:
+                    id: 1
+                    nom: Cooper
+                    matricule: 57551
+                    promotion: 6
+                    faculte: sciences
+                    genre: M
+                    date_subsciption: '2020-08-25 06:16:11'
+                    status: 1
+                properties:
+                  message:
+                    type: string
+                    example: null
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      nom:
+                        type: string
+                        example: Cooper
+                      matricule:
+                        type: integer
+                        example: 57551
+                      promotion:
+                        type: integer
+                        example: 6
+                      faculte:
+                        type: string
+                        example: sciences
+                      genre:
+                        type: string
+                        example: M
+                      date_subsciption:
+                        type: string
+                        example: '2020-08-25 06:16:11'
+                      status:
+                        type: integer
+                        example: 1
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiEtudiantUnilusId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nom:
+                  type: string
+                  description: ''
+                  example: cupiditate
+                matricule:
+                  type: string
+                  description: ''
+                  example: quo
+                promotion:
+                  type: string
+                  description: ''
+                  example: quis
+                faculte:
+                  type: string
+                  description: ''
+                  example: consequatur
+                genre:
+                  type: string
+                  description: ''
+                  example: officia
+                date_subsciption:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2023-10-01T15:37:29'
+                status:
+                  type: boolean
+                  description: ''
+                  example: true
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiEtudiantUnilusId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the etudiantUnilu.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/logements:
+    get:
+      summary: ''
+      operationId: getApiLogements
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      nom: Antonietta
+                      nombreChambre: 44537485
+                      created_at: '2023-10-01 11:03:30'
+                      updated_at: '2023-10-01 11:03:30'
+                    -
+                      id: 2
+                      nom: Juliet
+                      nombreChambre: 6
+                      created_at: '2023-10-01 11:03:30'
+                      updated_at: '2023-10-01 11:03:30'
+                    -
+                      id: 3
+                      nom: Kenna
+                      nombreChambre: 23
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 4
+                      nom: Ebony
+                      nombreChambre: 444
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 5
+                      nom: Jakayla
+                      nombreChambre: 4
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 6
+                      nom: Narciso
+                      nombreChambre: 1
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 7
+                      nom: Shane
+                      nombreChambre: 5982781
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 8
+                      nom: Mara
+                      nombreChambre: 1213
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 9
+                      nom: Zakary
+                      nombreChambre: 787
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 10
+                      nom: Connor
+                      nombreChambre: 6348
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 11
+                      nom: Scarlett
+                      nombreChambre: 394504170
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                    -
+                      id: 12
+                      nom: Marley
+                      nombreChambre: 5808763
+                      created_at: '2023-10-01 11:03:31'
+                      updated_at: '2023-10-01 11:03:31'
+                  links:
+                    first: 'http://localhost/api/logements?page=1'
+                    last: 'http://localhost/api/logements?page=1'
+                    prev: null
+                    next: null
+                  meta:
+                    current_page: 1
+                    from: 1
+                    last_page: 1
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/logements?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: null
+                        label: 'Next &raquo;'
+                        active: false
+                    path: 'http://localhost/api/logements'
+                    per_page: 20
+                    to: 12
+                    total: 12
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        nom: Antonietta
+                        nombreChambre: 44537485
+                        created_at: '2023-10-01 11:03:30'
+                        updated_at: '2023-10-01 11:03:30'
+                      -
+                        id: 2
+                        nom: Juliet
+                        nombreChambre: 6
+                        created_at: '2023-10-01 11:03:30'
+                        updated_at: '2023-10-01 11:03:30'
+                      -
+                        id: 3
+                        nom: Kenna
+                        nombreChambre: 23
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 4
+                        nom: Ebony
+                        nombreChambre: 444
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 5
+                        nom: Jakayla
+                        nombreChambre: 4
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 6
+                        nom: Narciso
+                        nombreChambre: 1
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 7
+                        nom: Shane
+                        nombreChambre: 5982781
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 8
+                        nom: Mara
+                        nombreChambre: 1213
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 9
+                        nom: Zakary
+                        nombreChambre: 787
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 10
+                        nom: Connor
+                        nombreChambre: 6348
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 11
+                        nom: Scarlett
+                        nombreChambre: 394504170
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                      -
+                        id: 12
+                        nom: Marley
+                        nombreChambre: 5808763
+                        created_at: '2023-10-01 11:03:31'
+                        updated_at: '2023-10-01 11:03:31'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        nom:
+                          type: string
+                          example: Antonietta
+                        nombreChambre:
+                          type: integer
+                          example: 44537485
+                        created_at:
+                          type: string
+                          example: '2023-10-01 11:03:30'
+                        updated_at:
+                          type: string
+                          example: '2023-10-01 11:03:30'
+                  links:
+                    type: object
+                    properties:
+                      first:
+                        type: string
+                        example: 'http://localhost/api/logements?page=1'
+                      last:
+                        type: string
+                        example: 'http://localhost/api/logements?page=1'
+                      prev:
+                        type: string
+                        example: null
+                      next:
+                        type: string
+                        example: null
+                  meta:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 1
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/logements?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: null
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      path:
+                        type: string
+                        example: 'http://localhost/api/logements'
+                      per_page:
+                        type: integer
+                        example: 20
+                      to:
+                        type: integer
+                        example: 12
+                      total:
+                        type: integer
+                        example: 12
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiLogements
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nom:
+                  type: string
+                  description: ''
+                  example: est
+                nombreChambre:
+                  type: integer
+                  description: ''
+                  example: 17
+              required:
+                - nom
+                - nombreChambre
+      security: []
+  '/api/logements/{id}':
+    get:
+      summary: ''
+      operationId: getApiLogementsId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: null
+                  data:
+                    id: 1
+                    nom: Antonietta
+                    nombreChambre: 44537485
+                    created_at: '2023-10-01 11:03:30'
+                    updated_at: '2023-10-01 11:03:30'
+                properties:
+                  message:
+                    type: string
+                    example: null
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      nom:
+                        type: string
+                        example: Antonietta
+                      nombreChambre:
+                        type: integer
+                        example: 44537485
+                      created_at:
+                        type: string
+                        example: '2023-10-01 11:03:30'
+                      updated_at:
+                        type: string
+                        example: '2023-10-01 11:03:30'
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiLogementsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nom:
+                  type: string
+                  description: ''
+                  example: dolorem
+                nombreChambre:
+                  type: integer
+                  description: ''
+                  example: 15
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiLogementsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the logement.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/reservations:
+    get:
+      summary: ''
+      operationId: getApiReservations
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  errors:
+                    -
+                      status: 401
+                      title: Unauthenticated!
+                      detail: Unauthenticated.
+                properties:
+                  errors:
+                    type: array
+                    example:
+                      -
+                        status: 401
+                        title: Unauthenticated!
+                        detail: Unauthenticated.
+                    items:
+                      type: object
+                      properties:
+                        status:
+                          type: integer
+                          example: 401
+                        title:
+                          type: string
+                          example: Unauthenticated!
+                        detail:
+                          type: string
+                          example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiReservations
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idChambre:
+                  type: string
+                  description: ''
+                  example: facere
+                IdEtudiant:
+                  type: string
+                  description: ''
+                  example: in
+                lettreMotivation:
+                  type: string
+                  description: ''
+                  example: null
+                preuvePaiement:
+                  type: string
+                  description: ''
+                  example: null
+              required:
+                - idChambre
+                - IdEtudiant
+      security: []
+  '/api/reservations/{id}':
+    get:
+      summary: ''
+      operationId: getApiReservationsId
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  errors:
+                    -
+                      status: 401
+                      title: Unauthenticated!
+                      detail: Unauthenticated.
+                properties:
+                  errors:
+                    type: array
+                    example:
+                      -
+                        status: 401
+                        title: Unauthenticated!
+                        detail: Unauthenticated.
+                    items:
+                      type: object
+                      properties:
+                        status:
+                          type: integer
+                          example: 401
+                        title:
+                          type: string
+                          example: Unauthenticated!
+                        detail:
+                          type: string
+                          example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiReservationsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idChambre:
+                  type: string
+                  description: ''
+                  example: null
+                IdEtudiant:
+                  type: string
+                  description: ''
+                  example: null
+                lettreMotivation:
+                  type: string
+                  description: ''
+                  example: null
+                preuvePaiement:
+                  type: string
+                  description: ''
+                  example: null
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiReservationsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the reservation.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/etudiants:
+    get:
+      summary: ''
+      operationId: getApiEtudiants
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  data:
+                    -
+                      id: 1
+                      nom: Curtis
+                      matricule: 49278
+                      promotion: 7
+                      faculte: economie
+                      telephone: null
+                      created_at: '2023-10-01 12:05:12'
+                      updated_at: '2023-10-01 12:05:12'
+                  links:
+                    first: 'http://localhost/api/etudiants?page=1'
+                    last: 'http://localhost/api/etudiants?page=1'
+                    prev: null
+                    next: null
+                  meta:
+                    current_page: 1
+                    from: 1
+                    last_page: 1
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://localhost/api/etudiants?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: null
+                        label: 'Next &raquo;'
+                        active: false
+                    path: 'http://localhost/api/etudiants'
+                    per_page: 20
+                    to: 1
+                    total: 1
+                properties:
+                  data:
+                    type: array
+                    example:
+                      -
+                        id: 1
+                        nom: Curtis
+                        matricule: 49278
+                        promotion: 7
+                        faculte: economie
+                        telephone: null
+                        created_at: '2023-10-01 12:05:12'
+                        updated_at: '2023-10-01 12:05:12'
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        nom:
+                          type: string
+                          example: Curtis
+                        matricule:
+                          type: integer
+                          example: 49278
+                        promotion:
+                          type: integer
+                          example: 7
+                        faculte:
+                          type: string
+                          example: economie
+                        telephone:
+                          type: string
+                          example: null
+                        created_at:
+                          type: string
+                          example: '2023-10-01 12:05:12'
+                        updated_at:
+                          type: string
+                          example: '2023-10-01 12:05:12'
+                  links:
+                    type: object
+                    properties:
+                      first:
+                        type: string
+                        example: 'http://localhost/api/etudiants?page=1'
+                      last:
+                        type: string
+                        example: 'http://localhost/api/etudiants?page=1'
+                      prev:
+                        type: string
+                        example: null
+                      next:
+                        type: string
+                        example: null
+                  meta:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 1
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://localhost/api/etudiants?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: null
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      path:
+                        type: string
+                        example: 'http://localhost/api/etudiants'
+                      per_page:
+                        type: integer
+                        example: 20
+                      to:
+                        type: integer
+                        example: 1
+                      total:
+                        type: integer
+                        example: 1
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: ''
+      operationId: postApiEtudiants
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nom:
+                  type: string
+                  description: ''
+                  example: repudiandae
+                matricule:
+                  type: integer
+                  description: ''
+                  example: 11
+                promotion:
+                  type: integer
+                  description: ''
+                  example: 7
+                faculte:
+                  type: string
+                  description: ''
+                  example: adipisci
+                telephone:
+                  type: string
+                  description: ''
+                  example: voluptatum
+              required:
+                - nom
+                - matricule
+                - promotion
+                - faculte
+                - telephone
+      security: []
+  '/api/etudiants/{id}':
+    get:
+      summary: ''
+      operationId: getApiEtudiantsId
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: null
+                  data:
+                    id: 1
+                    nom: Curtis
+                    matricule: 49278
+                    promotion: 7
+                    faculte: economie
+                    telephone: null
+                    created_at: '2023-10-01 12:05:12'
+                    updated_at: '2023-10-01 12:05:12'
+                properties:
+                  message:
+                    type: string
+                    example: null
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      nom:
+                        type: string
+                        example: Curtis
+                      matricule:
+                        type: integer
+                        example: 49278
+                      promotion:
+                        type: integer
+                        example: 7
+                      faculte:
+                        type: string
+                        example: economie
+                      telephone:
+                        type: string
+                        example: null
+                      created_at:
+                        type: string
+                        example: '2023-10-01 12:05:12'
+                      updated_at:
+                        type: string
+                        example: '2023-10-01 12:05:12'
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: ''
+      operationId: putApiEtudiantsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nom:
+                  type: string
+                  description: ''
+                  example: ipsam
+                matricule:
+                  type: integer
+                  description: ''
+                  example: 7
+                promotion:
+                  type: integer
+                  description: ''
+                  example: 4
+                faculte:
+                  type: string
+                  description: ''
+                  example: nobis
+                telephone:
+                  type: string
+                  description: ''
+                  example: eligendi
+      security: []
+    delete:
+      summary: ''
+      operationId: deleteApiEtudiantsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the etudiant.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/reservation/confirmer:
+    post:
+      summary: 'Summary of confirmer'
+      operationId: summaryOfConfirmer
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  /api/reservation/annuler:
+    post:
+      summary: 'Summary of annuler'
+      operationId: summaryOfAnnuler
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+tags:
+  -
+    name: Endpoints
+    description: ''

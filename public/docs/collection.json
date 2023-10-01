@@ -1,0 +1,1522 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "http:\/\/localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "60b8a837-00ac-4a82-826a-e70e68ea808c",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "GET api\/user",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/user"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/problem+json"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"errors\":[{\"status\":401,\"title\":\"Unauthenticated!\",\"detail\":\"Unauthenticated.\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/login",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/login",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/login"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/rooms",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/rooms",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/rooms"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "59"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":1,\"numberRoom\":null,\"HomeName\":null,\"places\":863244,\"status\":1,\"image_path\":null,\"description\":\"Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.\"},{\"id\":2,\"numberRoom\":null,\"HomeName\":null,\"places\":86836,\"status\":1,\"image_path\":null,\"description\":\"Vel qui ad hic est consequatur. Quam voluptas quae assumenda eligendi libero eligendi. Sit voluptates quia qui nostrum quas. Accusantium repellendus dignissimos velit sunt fugiat autem possimus.\"},{\"id\":3,\"numberRoom\":null,\"HomeName\":null,\"places\":5871534,\"status\":0,\"image_path\":null,\"description\":\"Ipsa sed odit repellat minima animi sapiente. Quia nostrum accusantium est. Ex iusto debitis quo adipisci quos.\"},{\"id\":4,\"numberRoom\":null,\"HomeName\":null,\"places\":49390,\"status\":0,\"image_path\":null,\"description\":\"Vel qui fugiat tenetur. Eveniet velit voluptatem adipisci quam cumque. Quisquam fugit pariatur vel totam dolores. Minus at natus id et eum.\"},{\"id\":5,\"numberRoom\":null,\"HomeName\":null,\"places\":48864,\"status\":1,\"image_path\":null,\"description\":\"Rem perferendis at et iusto. Dolor nostrum et provident voluptas eveniet. Minus accusamus minus consequatur aperiam tenetur. Aspernatur est esse vitae rerum.\"},{\"id\":6,\"numberRoom\":null,\"HomeName\":null,\"places\":72318868,\"status\":1,\"image_path\":null,\"description\":\"Ut magni fuga et temporibus temporibus et. Aut et aut suscipit hic fugit est autem. Et eveniet autem aut omnis eveniet.\"},{\"id\":7,\"numberRoom\":null,\"HomeName\":null,\"places\":617,\"status\":0,\"image_path\":null,\"description\":\"Porro dolor tempore magni provident est est. Ea natus odit perferendis velit. Et rerum aspernatur id incidunt consequatur.\"},{\"id\":8,\"numberRoom\":null,\"HomeName\":null,\"places\":1,\"status\":1,\"image_path\":null,\"description\":\"Nihil commodi tenetur quae in quod non. Pariatur quis hic tempore sed tempore temporibus repellat.\"},{\"id\":9,\"numberRoom\":null,\"HomeName\":null,\"places\":19,\"status\":1,\"image_path\":null,\"description\":\"Id impedit totam ex ducimus suscipit esse quidem. Nobis rem voluptates eos illo unde recusandae. Ut delectus voluptates ut enim voluptatem.\"},{\"id\":10,\"numberRoom\":null,\"HomeName\":null,\"places\":7178916,\"status\":1,\"image_path\":null,\"description\":\"Enim sunt aut incidunt ipsum. Accusantium dolor corrupti enim voluptates cumque ut veritatis ipsam. Suscipit quae perspiciatis voluptas est quaerat. Non repudiandae non ratione libero maiores id.\"},{\"id\":11,\"numberRoom\":null,\"HomeName\":null,\"places\":72806427,\"status\":0,\"image_path\":null,\"description\":\"Eveniet nisi qui et ipsam facere recusandae. Cupiditate modi quia esse est unde expedita. Delectus itaque illo ipsa ea.\"},{\"id\":12,\"numberRoom\":null,\"HomeName\":null,\"places\":0,\"status\":1,\"image_path\":null,\"description\":\"Eum hic dignissimos aut veniam sed praesentium quis et. Aspernatur debitis cumque quasi ullam expedita et consectetur numquam. Ducimus modi est laudantium.\"},{\"id\":13,\"numberRoom\":null,\"HomeName\":null,\"places\":79136973,\"status\":0,\"image_path\":null,\"description\":\"Eligendi sunt possimus et et aut. Cupiditate officiis sit voluptatem qui. Veniam temporibus non odio consectetur. Laudantium sed sit assumenda quas voluptatem voluptatem vero maiores.\"},{\"id\":14,\"numberRoom\":null,\"HomeName\":null,\"places\":50810645,\"status\":1,\"image_path\":null,\"description\":\"Ad odio molestias nisi nulla eius. Dicta omnis quasi amet consequatur voluptatibus. Delectus occaecati eos in exercitationem commodi accusantium aut. Tempore impedit nesciunt consequatur sunt quod.\"},{\"id\":15,\"numberRoom\":null,\"HomeName\":null,\"places\":-1,\"status\":1,\"image_path\":null,\"description\":\"Maxime aut quam libero. Autem quisquam praesentium sint magnam nam. Rerum laborum accusamus earum aliquid porro quo.\"},{\"id\":16,\"numberRoom\":null,\"HomeName\":null,\"places\":5320,\"status\":1,\"image_path\":null,\"description\":\"Enim ipsam accusantium odit et. Dolorum quia aut et pariatur. Sint qui iste in qui. Ut culpa consequatur nemo ex et aut. Harum consectetur quam omnis numquam.\"},{\"id\":17,\"numberRoom\":null,\"HomeName\":null,\"places\":7761,\"status\":0,\"image_path\":null,\"description\":\"Consequatur consequatur eos voluptatem quod voluptates et autem. Libero natus non sit enim. Incidunt qui quo dolore at voluptatem et magni.\"},{\"id\":18,\"numberRoom\":null,\"HomeName\":null,\"places\":629,\"status\":0,\"image_path\":null,\"description\":\"Earum pariatur dicta error ea at optio. Sunt debitis quia aut nemo voluptas. Voluptate accusamus sit est sint libero qui officia.\"},{\"id\":19,\"numberRoom\":null,\"HomeName\":null,\"places\":706,\"status\":0,\"image_path\":null,\"description\":\"Illo vel praesentium error quia labore. Culpa cumque exercitationem reprehenderit eos vel. Sunt magni ex assumenda id nisi distinctio.\"},{\"id\":20,\"numberRoom\":null,\"HomeName\":null,\"places\":28156821,\"status\":1,\"image_path\":null,\"description\":\"Sit adipisci culpa et aut. Maiores quis magnam natus doloribus voluptate assumenda. Omnis quo qui aut.\"}],\"links\":{\"first\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=1\",\"last\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=5\",\"prev\":null,\"next\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=2\"},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":5,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=1\",\"label\":\"1\",\"active\":true},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=2\",\"label\":\"2\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=3\",\"label\":\"3\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=4\",\"label\":\"4\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=5\",\"label\":\"5\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/rooms?page=2\",\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/localhost\\\/api\\\/rooms\",\"per_page\":20,\"to\":20,\"total\":100}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/rooms",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/rooms",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/rooms"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/rooms\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/rooms\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/rooms\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the room."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "58"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":\"here is the room\",\"data\":{\"id\":1,\"numberRoom\":null,\"HomeName\":null,\"places\":863244,\"status\":1,\"image_path\":null,\"description\":\"Consectetur rerum provident omnis. Dolores itaque illum illo sed sapiente est. Fugit dolorum et provident assumenda totam iusto est.\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/rooms\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/rooms\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/rooms\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the room."
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "multipart\/form-data"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "numberRoom",
+                                    "value": 20,
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "HomeName",
+                                    "value": "voluptatem",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "places",
+                                    "value": 6,
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "status",
+                                    "value": false,
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Voluptates architecto est ratione et.",
+                                    "type": "text",
+                                    "description": ""
+                                },
+                                {
+                                    "key": "image_path",
+                                    "src": [],
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "_method",
+                                    "value": "PUT",
+                                    "type": "text"
+                                }
+                            ]
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/rooms\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/rooms\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/rooms\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the room."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/subscriptions",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subscriptions",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/subscriptions"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/problem+json"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"errors\":[{\"status\":401,\"title\":\"Unauthenticated!\",\"detail\":\"Unauthenticated.\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/subscriptions",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subscriptions",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/subscriptions"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"user_id\":7,\"amount\":2,\"date_subsciption\":\"2023-10-01T15:37:29\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/subscriptions\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subscriptions\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/subscriptions\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "12",
+                                    "description": "The ID of the subscription."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/problem+json"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"errors\":[{\"status\":401,\"title\":\"Unauthenticated!\",\"detail\":\"Unauthenticated.\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/subscriptions\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subscriptions\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/subscriptions\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "2",
+                                    "description": "The ID of the subscription."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"room_id\":20,\"user_id\":17,\"amount\":17,\"date_subsciption\":\"2023-10-01T15:37:29\",\"status\":true}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/subscriptions\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/subscriptions\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/subscriptions\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "15",
+                                    "description": "The ID of the subscription."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/etudiantUnilus",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiantUnilus",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiantUnilus"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "57"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":1,\"nom\":\"Cooper\",\"matricule\":57551,\"promotion\":6,\"faculte\":\"sciences\",\"genre\":\"M\",\"date_subsciption\":\"2020-08-25 06:16:11\",\"status\":1},{\"id\":2,\"nom\":\"Kaden\",\"matricule\":3705,\"promotion\":5,\"faculte\":\"psycho\",\"genre\":\"M\",\"date_subsciption\":\"2019-07-15 06:51:06\",\"status\":1},{\"id\":3,\"nom\":\"Cleo\",\"matricule\":77284,\"promotion\":6,\"faculte\":\"polythequenique\",\"genre\":\"F\",\"date_subsciption\":\"1976-08-23 17:48:20\",\"status\":0},{\"id\":4,\"nom\":\"Aileen\",\"matricule\":13704,\"promotion\":4,\"faculte\":\"sciences\",\"genre\":\"M\",\"date_subsciption\":\"2015-03-17 17:05:58\",\"status\":0},{\"id\":5,\"nom\":\"Monte\",\"matricule\":33801,\"promotion\":1,\"faculte\":\"psycho\",\"genre\":\"M\",\"date_subsciption\":\"1993-05-25 18:55:39\",\"status\":1},{\"id\":6,\"nom\":\"Enrique\",\"matricule\":61765,\"promotion\":3,\"faculte\":\"sciences\",\"genre\":\"M\",\"date_subsciption\":\"1999-05-21 03:37:53\",\"status\":0},{\"id\":7,\"nom\":\"Earlene\",\"matricule\":54096,\"promotion\":7,\"faculte\":\"economie\",\"genre\":\"F\",\"date_subsciption\":\"1997-07-28 03:40:29\",\"status\":1},{\"id\":8,\"nom\":\"Milton\",\"matricule\":78896,\"promotion\":7,\"faculte\":\"economie\",\"genre\":\"F\",\"date_subsciption\":\"1979-10-01 02:04:46\",\"status\":0},{\"id\":9,\"nom\":\"Earnestine\",\"matricule\":15205,\"promotion\":3,\"faculte\":\"SPA\",\"genre\":\"M\",\"date_subsciption\":\"2007-10-03 22:55:24\",\"status\":0},{\"id\":10,\"nom\":\"Daniela\",\"matricule\":43548,\"promotion\":6,\"faculte\":\"economie\",\"genre\":\"M\",\"date_subsciption\":\"1971-08-23 18:16:03\",\"status\":0},{\"id\":11,\"nom\":\"Daniela\",\"matricule\":66395,\"promotion\":8,\"faculte\":\"droit\",\"genre\":\"F\",\"date_subsciption\":\"1979-03-19 23:58:44\",\"status\":0},{\"id\":12,\"nom\":\"August\",\"matricule\":20142,\"promotion\":7,\"faculte\":\"SPA\",\"genre\":\"F\",\"date_subsciption\":\"2003-04-14 22:37:59\",\"status\":0},{\"id\":13,\"nom\":\"Viola\",\"matricule\":6778,\"promotion\":8,\"faculte\":\"droit\",\"genre\":\"F\",\"date_subsciption\":\"1971-03-06 05:03:55\",\"status\":0},{\"id\":14,\"nom\":\"Johann\",\"matricule\":37449,\"promotion\":4,\"faculte\":\"medecine\",\"genre\":\"F\",\"date_subsciption\":\"2001-10-01 14:20:36\",\"status\":0},{\"id\":15,\"nom\":\"Estefania\",\"matricule\":24567,\"promotion\":8,\"faculte\":\"economie\",\"genre\":\"M\",\"date_subsciption\":\"2000-03-14 16:27:30\",\"status\":0},{\"id\":16,\"nom\":\"Scotty\",\"matricule\":65475,\"promotion\":8,\"faculte\":\"SPA\",\"genre\":\"M\",\"date_subsciption\":\"1983-03-10 12:48:04\",\"status\":0},{\"id\":17,\"nom\":\"Mitchel\",\"matricule\":10503,\"promotion\":7,\"faculte\":\"polythequenique\",\"genre\":\"M\",\"date_subsciption\":\"1993-10-19 23:15:46\",\"status\":1},{\"id\":18,\"nom\":\"Constance\",\"matricule\":79210,\"promotion\":6,\"faculte\":\"economie\",\"genre\":\"F\",\"date_subsciption\":\"1971-03-12 11:51:30\",\"status\":0},{\"id\":19,\"nom\":\"Brigitte\",\"matricule\":61177,\"promotion\":4,\"faculte\":\"droit\",\"genre\":\"M\",\"date_subsciption\":\"1986-12-06 16:17:42\",\"status\":1},{\"id\":20,\"nom\":\"Charles\",\"matricule\":18154,\"promotion\":2,\"faculte\":\"psycho\",\"genre\":\"M\",\"date_subsciption\":\"1972-11-05 05:13:38\",\"status\":1}],\"links\":{\"first\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=1\",\"last\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=25\",\"prev\":null,\"next\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=2\"},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":25,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=1\",\"label\":\"1\",\"active\":true},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=2\",\"label\":\"2\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=3\",\"label\":\"3\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=4\",\"label\":\"4\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=5\",\"label\":\"5\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=6\",\"label\":\"6\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=7\",\"label\":\"7\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=8\",\"label\":\"8\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=9\",\"label\":\"9\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=10\",\"label\":\"10\",\"active\":false},{\"url\":null,\"label\":\"...\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=24\",\"label\":\"24\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=25\",\"label\":\"25\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus?page=2\",\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/localhost\\\/api\\\/etudiantUnilus\",\"per_page\":20,\"to\":20,\"total\":500}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/etudiantUnilus",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiantUnilus",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiantUnilus"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nom\":\"et\",\"matricule\":\"aut\",\"promotion\":\"est\",\"faculte\":\"fuga\",\"genre\":\"consequatur\",\"date_subsciption\":\"2023-10-01T15:37:29\",\"status\":true}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/etudiantUnilus\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiantUnilus\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiantUnilus\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the etudiantUnilu."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "56"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":null,\"data\":{\"id\":1,\"nom\":\"Cooper\",\"matricule\":57551,\"promotion\":6,\"faculte\":\"sciences\",\"genre\":\"M\",\"date_subsciption\":\"2020-08-25 06:16:11\",\"status\":1}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/etudiantUnilus\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiantUnilus\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiantUnilus\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the etudiantUnilu."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nom\":\"cupiditate\",\"matricule\":\"quo\",\"promotion\":\"quis\",\"faculte\":\"consequatur\",\"genre\":\"officia\",\"date_subsciption\":\"2023-10-01T15:37:29\",\"status\":true}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/etudiantUnilus\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiantUnilus\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiantUnilus\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the etudiantUnilu."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/logements",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logements",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logements"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "55"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":1,\"nom\":\"Antonietta\",\"nombreChambre\":44537485,\"created_at\":\"2023-10-01 11:03:30\",\"updated_at\":\"2023-10-01 11:03:30\"},{\"id\":2,\"nom\":\"Juliet\",\"nombreChambre\":6,\"created_at\":\"2023-10-01 11:03:30\",\"updated_at\":\"2023-10-01 11:03:30\"},{\"id\":3,\"nom\":\"Kenna\",\"nombreChambre\":23,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":4,\"nom\":\"Ebony\",\"nombreChambre\":444,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":5,\"nom\":\"Jakayla\",\"nombreChambre\":4,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":6,\"nom\":\"Narciso\",\"nombreChambre\":1,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":7,\"nom\":\"Shane\",\"nombreChambre\":5982781,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":8,\"nom\":\"Mara\",\"nombreChambre\":1213,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":9,\"nom\":\"Zakary\",\"nombreChambre\":787,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":10,\"nom\":\"Connor\",\"nombreChambre\":6348,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":11,\"nom\":\"Scarlett\",\"nombreChambre\":394504170,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"},{\"id\":12,\"nom\":\"Marley\",\"nombreChambre\":5808763,\"created_at\":\"2023-10-01 11:03:31\",\"updated_at\":\"2023-10-01 11:03:31\"}],\"links\":{\"first\":\"http:\\\/\\\/localhost\\\/api\\\/logements?page=1\",\"last\":\"http:\\\/\\\/localhost\\\/api\\\/logements?page=1\",\"prev\":null,\"next\":null},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":1,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/logements?page=1\",\"label\":\"1\",\"active\":true},{\"url\":null,\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/localhost\\\/api\\\/logements\",\"per_page\":20,\"to\":12,\"total\":12}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/logements",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logements",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logements"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nom\":\"est\",\"nombreChambre\":17}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/logements\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logements\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logements\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the logement."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "54"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":null,\"data\":{\"id\":1,\"nom\":\"Antonietta\",\"nombreChambre\":44537485,\"created_at\":\"2023-10-01 11:03:30\",\"updated_at\":\"2023-10-01 11:03:30\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/logements\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logements\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logements\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the logement."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nom\":\"dolorem\",\"nombreChambre\":15}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/logements\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/logements\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/logements\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the logement."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/reservations",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservations",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservations"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/problem+json"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"errors\":[{\"status\":401,\"title\":\"Unauthenticated!\",\"detail\":\"Unauthenticated.\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/reservations",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservations",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservations"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"idChambre\":\"facere\",\"IdEtudiant\":\"in\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/reservations\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservations\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservations\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the reservation."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/problem+json"
+                                },
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 401,
+                            "body": "{\"errors\":[{\"status\":401,\"title\":\"Unauthenticated!\",\"detail\":\"Unauthenticated.\"}]}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/reservations\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservations\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservations\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the reservation."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/reservations\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservations\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservations\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the reservation."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/etudiants",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiants",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiants"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "53"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"data\":[{\"id\":1,\"nom\":\"Curtis\",\"matricule\":49278,\"promotion\":7,\"faculte\":\"economie\",\"telephone\":null,\"created_at\":\"2023-10-01 12:05:12\",\"updated_at\":\"2023-10-01 12:05:12\"}],\"links\":{\"first\":\"http:\\\/\\\/localhost\\\/api\\\/etudiants?page=1\",\"last\":\"http:\\\/\\\/localhost\\\/api\\\/etudiants?page=1\",\"prev\":null,\"next\":null},\"meta\":{\"current_page\":1,\"from\":1,\"last_page\":1,\"links\":[{\"url\":null,\"label\":\"&laquo; Previous\",\"active\":false},{\"url\":\"http:\\\/\\\/localhost\\\/api\\\/etudiants?page=1\",\"label\":\"1\",\"active\":true},{\"url\":null,\"label\":\"Next &raquo;\",\"active\":false}],\"path\":\"http:\\\/\\\/localhost\\\/api\\\/etudiants\",\"per_page\":20,\"to\":1,\"total\":1}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "POST api\/etudiants",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiants",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiants"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nom\":\"repudiandae\",\"matricule\":11,\"promotion\":7,\"faculte\":\"adipisci\",\"telephone\":\"voluptatum\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/etudiants\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiants\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiants\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the etudiant."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "header": [
+                                {
+                                    "key": "cache-control",
+                                    "value": "no-cache, private"
+                                },
+                                {
+                                    "key": "content-type",
+                                    "value": "application\/json"
+                                },
+                                {
+                                    "key": "x-ratelimit-limit",
+                                    "value": "60"
+                                },
+                                {
+                                    "key": "x-ratelimit-remaining",
+                                    "value": "52"
+                                },
+                                {
+                                    "key": "access-control-allow-origin",
+                                    "value": "*"
+                                }
+                            ],
+                            "code": 200,
+                            "body": "{\"message\":null,\"data\":{\"id\":1,\"nom\":\"Curtis\",\"matricule\":49278,\"promotion\":7,\"faculte\":\"economie\",\"telephone\":null,\"created_at\":\"2023-10-01 12:05:12\",\"updated_at\":\"2023-10-01 12:05:12\"}}",
+                            "name": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PUT api\/etudiants\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiants\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiants\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the etudiant."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"nom\":\"ipsam\",\"matricule\":7,\"promotion\":4,\"faculte\":\"nobis\",\"telephone\":\"eligendi\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/etudiants\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/etudiants\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/etudiants\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "1",
+                                    "description": "The ID of the etudiant."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Summary of confirmer",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservation\/confirmer",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservation\/confirmer"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Summary of annuler",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/reservation\/annuler",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/reservation\/annuler"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
