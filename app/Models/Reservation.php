@@ -24,6 +24,7 @@ class Reservation extends Model
 		'IdEtudiant',
 		'lettreMotivation',
 		'preuvePaiement',
+        'status'
     ];
 
 	public function idChambre(): \Illuminate\Database\Eloquent\Relations\BelongsTo

@@ -8,12 +8,14 @@ use App\Http\Requests\Reservation\UpdateReservationRequest;
 use App\Http\Resources\Reservation\ReservationResource;
 use App\Models\Reservation;
 use App\Observers\UpdateRoomPlacesObserver;
+use Essa\APIToolKit\Api\ApiResponse;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
+    use ApiResponse;
     public function __construct(public UpdateRoomPlacesObserver $updateRoomPlacesObserver)
     {
         $this->middleware("auth:sanctum");
@@ -51,7 +53,11 @@ class ReservationController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function confirmer(Request $request) :JsonResponse {
+    public function confirmer() :JsonResponse {
+        dd("holla");
+        //$reservation->update(["status" => 1]);
+
+     //   return $this->responseSuccess('reservation confirmé avec succces', new ReservationResource($reservation));
 
     }
 
