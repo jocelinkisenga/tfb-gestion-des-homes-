@@ -20,6 +20,7 @@ class EtudiantUniluFactory extends Factory
     {
      $facultes =   $this->faker->randomElement(['sciences','droit','medecine','psycho','economie','SPA','polythequenique']);
     $genre = $this->faker->randomElement(["M","F"]);
+    $passowrd = $this->faker->shuffle("unilukasapa2023");
         return [
             'nom' => $this->faker->firstName(),
 			'matricule' => $this->faker->randomNumber(5),
@@ -28,7 +29,7 @@ class EtudiantUniluFactory extends Factory
 			'genre' => $genre,
 			'date_subsciption' => $this->faker->dateTime(),
 			'status' => $this->faker->boolean(),
-            "password" => Hash::make("unilu la meilleure")
+            "password" => $passowrd
         ];
 
     }

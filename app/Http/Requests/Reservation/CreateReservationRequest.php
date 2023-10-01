@@ -11,8 +11,8 @@ class CreateReservationRequest extends FormRequest
         return [
             'idChambre' => ['required'],
 			'IdEtudiant' => ['required'],
-			'lettreMotivation' => ['required'],
-			'preuvePaiement' => ['required'],
+			'lettreMotivation' => ['nullable'],
+			'preuvePaiement' => ['nullable'],
         ];
     }
 }

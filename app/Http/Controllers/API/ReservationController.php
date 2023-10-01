@@ -15,10 +15,10 @@ class ReservationController extends Controller
 {
     public function __construct()
     {
-
+        $this->middleware("auth:sanctum");
     }
 
-    public function index(): AnonymousResourceCollection 
+    public function index(): AnonymousResourceCollection
     {
         $reservations = Reservation::useFilters()->dynamicPaginate();
 
@@ -42,6 +42,24 @@ class ReservationController extends Controller
         $reservation->update($request->validated());
 
         return $this->responseSuccess('Reservation updated Successfully', new ReservationResource($reservation));
+    }
+
+    /**
+     * Summary of confirmer
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function confirmer(Request $request) :JsonResponse {
+
+    }
+
+        /**
+     * Summary of annuler
+     * @param \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function annuler(Request $request) :JsonResponse {
+
     }
 
     public function destroy(Reservation $reservation): JsonResponse

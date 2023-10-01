@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\Api\AuthenticatedController;
+use App\Http\Controllers\API\ReservationController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -77,3 +78,8 @@ Route::apiResource('/reservations', \App\Http\Controllers\API\ReservationControl
 Route::apiResource('/etudiants', \App\Http\Controllers\API\EtudiantController::class);
 
 /*=====  End of etudiants   ======*/
+
+Route::middleware(['auth', ])->prefix("reservation")->group(function () {
+    Route::post("/confirmer",[ReservationController::class,"confirmer"]);
+    Route::post("/annuler",[ReservationController::class,"annuler"]);
+});

@@ -6,12 +6,16 @@ use App\Filters\EtudiantFilters;
 use Essa\APIToolKit\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 
-class Etudiant extends Model
+class Etudiant extends Authenticatable
 {
     public $table = "etudiants";
     use HasFactory, Filterable;
+    use HasApiTokens, HasFactory, Notifiable;
 
     protected string $default_filters = EtudiantFilters::class;
 
@@ -26,7 +30,8 @@ class Etudiant extends Model
 		'promotion',
 		'faculte',
 		'telephone',
-        'role_id'
+        'role_id',
+        'password'
     ];
 
 

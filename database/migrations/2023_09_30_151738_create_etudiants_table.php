@@ -19,7 +19,7 @@ return new class extends Migration
 			$table->bigInteger('matricule');
 			$table->integer('promotion');
 			$table->string('faculte');
-			$table->string('telephone');
+			$table->string('telephone')->nullable();
             $table->string("password")->nullable();
             $table->integer("role_id")->default(2);
             $table->timestamps();
