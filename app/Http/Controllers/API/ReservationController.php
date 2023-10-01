@@ -7,13 +7,14 @@ use App\Http\Requests\Reservation\CreateReservationRequest;
 use App\Http\Requests\Reservation\UpdateReservationRequest;
 use App\Http\Resources\Reservation\ReservationResource;
 use App\Models\Reservation;
+use App\Observers\UpdateRoomPlacesObserver;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Request;
 
 class ReservationController extends Controller
 {
-    public function __construct()
+    public function __construct(public UpdateRoomPlacesObserver $updateRoomPlacesObserver)
     {
         $this->middleware("auth:sanctum");
     }
@@ -27,8 +28,9 @@ class ReservationController extends Controller
 
     public function store(CreateReservationRequest $request): JsonResponse
     {
-        $reservation = Reservation::create($request->validated());
 
+        $reservation = Reservation::create($request->validated());
+        $this->updateRoomPlacesObserver->removeQuantity($request->idChambre);
         return $this->responseCreated('Reservation created successfully', new ReservationResource($reservation));
     }
 
